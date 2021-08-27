@@ -507,4 +507,9 @@ contract Mars4ERC20 is ERC20("MARS4", "MARS$") {
     constructor() {
         _mint(msg.sender, 4_000_000_000 ether);
     }
+
+    function burn(uint256 amount) public virtual returns (bool) {
+        _burn(_msgSender(), amount);
+        return true;
+    }
 }
