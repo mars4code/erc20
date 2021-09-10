@@ -503,7 +503,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
 pragma solidity ^0.8.0;
 
 
-contract Mars4ERC20 is ERC20("MARS4", "MARS$") {
+contract Mars4ERC20 is ERC20("MARS4", "MARS4") {
     constructor() {
         _mint(msg.sender, 4_000_000_000 ether);
     }
